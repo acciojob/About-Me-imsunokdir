@@ -54,7 +54,7 @@
         /* flex-wrap: wrap; */
         background-color: red;
         /* width: 100%; */
-        padding: 10px;
+        padding: 15px;
         border-radius: 70px;
 		  box-shadow:8px 10px 10px #ccc
       }
@@ -112,7 +112,19 @@
         background-color: rgb(211, 240, 210);
 		border-radius:10px;
       }
- 
+ @media(max-width:516px){
+           .personal-details .names {
+          padding: 10px;
+          flex-direction: column;
+			justify-content:center;
+			margin-left: 10px;
+			/*gap:2px*/
+        }
+        .personal-details .names section{
+          margin-bottom: -35px;
+        }
+        
+ }
       @media (max-width: 874px) {
         body {
           height: 100%;
@@ -127,6 +139,8 @@
         }
         .personal-details .names {
           padding: 10px;
+			justify-content:center;
+			gap:15px
         }
 		  /* .skills{
 			  margin-bottom:50px;
